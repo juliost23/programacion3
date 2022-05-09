@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clousures</title>
+    </head>
+    <body>
+    <script>
+
+    function saludar() { 
+        const mensaje = "Hola";
+
+        return function hola(){
+            console.log(mensaje);
+        }
+        function hola() {
+
+        }
+    }
+
+    const saludo = saludar();
+    saludo();
+
+
+    </script>
+    </body>
+</html>

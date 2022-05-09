@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <title>Silva Tello Julio - Practico N° 1</title>
+</head>
+
+<body>
+    <script>
+
+        var arreglo= [30,100,22,123,55,456];
+        var palabras = ["Cero", "Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis", "Siete", "Ocho", "Nueve"]
+        var suma = 0;
+        
+        for(var i=0; i<arreglo.length; i++) {
+
+            suma += arreglo[i];
+        }
+
+
+        console.log("El Resueltado es = " + suma);
+        var arregloLetras = suma.toString();
+
+        
+        var caso = [];
+
+        for(var i =0 ; i < arregloLetras.length ; i ++) {
+            var numeroLetra = parseInt(arregloLetras[i]);
+            switch (numeroLetra) {
+
+                case 0:
+                        caso.push("Cero");
+                        break;
+                    case 1:
+                        caso.push("Uno");
+                        break;
+                    case 2:
+                        caso.push("Dos");
+                        break;
+                    case 3:
+                        caso.push("Tres");
+                        break;
+                    case 4:
+                        caso.push("Cuatro");
+                        break;
+                    case 5:
+                        caso.push("Cinco");
+                        break;
+                    case 6:
+                        caso.push("Seis");
+                        break;
+                    case 7:
+                        caso.push("Siete");
+                        break;
+                    case 8:
+                        caso.push("Ocho");
+                        break;
+                    case 9:
+                        caso.push("Nueve");
+                        break;
+
+            }
+
+        }
+        console.log(caso);
+
+
+    </script>
+</body>
+
+</html>

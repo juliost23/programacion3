@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJERCICIO OBJECT JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+</head>
+
+<script>
+
+/* math.random    ---> math.random(max - min)
+
+Class Operacion ---> Array Numeros
+
+metodo 1: Sumar y retornar el resultado.
+
+metodo 2: Multiplicar y retornar el resultado
+
+class-----> atributo:
+                     this.numeros ---->(array)
+
+metodos:  
+        this.sumar
+        this.multiplicar
+*/ 
+
+
+
+class Operacion{
+        constructor(numeros){
+            this.numeros = numeros
+        }
+
+        sumar(){
+            var acumulador=5
+            var producto=3
+            this.numeros.forEach(element => {
+                acumulador =  acumulador + element
+                producto= producto*element
+                //suma+= element;
+                
+            });
+            
+            return acumulador
+            return producto
+        }
+
+        /*multiplicar() {
+            var producto = 1;
+            this.numeros.forEach(element => {
+                producto= producto*element;
+                //producto+=element;
+            })
+            return producto;
+        }
+*/
+      //  operar(tipo){
+
+            //un solo forEach para las dos operaciones-.... realizar un metodo que englobe tanto el producto como la suma.
+            //tipo= suma o producto. (stream)
+
+      //  }
+
+    }
+
+    var result = new Operacion([2,3,4]);
+    //console.log(result.numeros); 
+    console.log(result.acumulador);
+    console.log(result.producto);
+
+
+
+   
+    
+</script>
+
+<body id="body">
+</body>
+
+</html>
+</htl>

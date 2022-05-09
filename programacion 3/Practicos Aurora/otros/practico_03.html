@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practico N°3</title>
+</head>
+<style>
+    .estilo {
+        background-color: rgb(42, 105, 40);
+        width: 700px;
+        height: 400px;
+        margin: auto;
+        border-radius: 10px;
+        padding-top: 50px;
+
+    }
+
+    .estilo2 {
+        background-color: white;
+        width: 70%;
+        height: 80%;
+        margin: auto;
+        border-radius: 10px;
+
+    }
+
+    .titulo {
+        padding: 10px;
+        margin: auto;
+        width: 60%;
+    }
+
+    .cuadro-tex {
+        margin: auto;
+        font-size: 12px;
+        padding: 10px;
+        width: 40%;
+    }
+
+    .cuadro-tex2 {
+        margin: auto;
+        font-size: 12px;
+        padding: 10px;
+        width: 40%;
+    }
+
+    .InputClas {
+        margin: auto;
+        font-size: 18px;
+        padding: 10px;
+        width: 40%;
+    }
+
+    .boton {
+        margin: auto;
+        font-size: 12px;
+        padding: 10px;
+        width: 40%;
+    }
+</style>
+<script>
+    ///permitir seleccionar en el combo una operacion matematica (suma, resta, multiplicacion y division)
+    /// ingresar los valores en los cuadros de texto
+    ///function clickBoton() {
+        ///alert(Evento)
+    ///}
+
+</script>
+
+<body>
+    <div class="estilo">
+        <div class="estilo2">
+            <div class="titulo">
+                <h1>Calculadora Basica</h1>
+            </div>
+            <div class="cuadro-tex">
+                <input type="number" required id="cuadro1" placeholder="Ingrese el Primer Numero">
+            </div>
+            <div class="cuadro-tex2">
+                <input type="number" required id="cuadro2" placeholder="Ingrese el Segundo Numero">
+            </div>
+            <div class="InputClas">
+                <label for="elije">Selecciona Operacion</label>
+                <select id="operar">
+                    <option value="+"> Suma </option>
+                    <option value="-"> Resta </option>
+                    <option value="*"> Multiplicacion </option>
+                    <option value="/"> Division </option>
+                </select>
+            </div>
+            <div class="boton">
+                <button id="resultado" onclick="operar()">Resultado</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function operar() {
+            const select = document.getElementById("operar").value
+            const a = +document.getElementById("cuadro1").value
+            const b = +document.getElementById("cuadro2").value
+            if (Number(a) && Number(b)) {
+
+                const resultado = select === "+" ? a + b : select === "-" ? a - b : select === "*" ? a * b : select === "/" ? a / b : "no hay operacion valida"
+
+                alert(`${a} ${select} ${b} = ${resultado}`)
+
+            }
+            else alert("NO hay numeros validos ")
+
+        }
+    </script>
+
+</body>
+
+</html>

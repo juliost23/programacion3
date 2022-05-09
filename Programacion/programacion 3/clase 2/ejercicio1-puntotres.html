@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+    //Funciones
+    //Sumar una cadena de numeros y los retorna;
+    // pasar por parametro un valor y multiplicarlo por el resultado de la suma anterior. 
+
+<head>
+    <meta http-equiv=”Content-Language” content=”es”/>
+    <title>Función Ejercicio</title>
+</head>
+
+<body>
+    <script>
+    
+      function retornarEnLetras(numero){
+          //123-> "123" -> ["uno","dos","tres"]
+         
+          const enum_lista = ["cero","uno", "dos","tres","cuatro","cinco", "seis","siete","ocho","nueve"];
+
+          const numberString = numero.toString();
+          const arrayString = numberString.split("");
+          arrayString.forEach(element => {
+              const elemento = enum_lista(element);
+              outputArray.push(elemento);
+              
+          });
+
+          return outputArray;
+      }
+
+      const resultado = retornarEnLetras(434)
+
+
+
+
+    </script>
+</body>
+
+</html>

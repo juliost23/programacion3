@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Trabajo Practico</title>
+    <script >
+        
+        var nombre = ['Cero', 'Uno', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis', 'Siete', 'Ocho', 'Nueve']
+
+        var numero = [19,4,61,15,150];
+
+        var resultado = 0;
+        for (var i=0 ;  i < numero.length; i++) {
+
+            resultado = resultado + numero[i];  
+
+        }
+
+        console.log(resultado);
+        var arrayres = resultado.toString();
+
+        
+        var res = [];
+
+        for(var i =0 ; i < arrayres.length ; i ++) {
+            var num = parseInt(arrayres[i]);
+            switch (num) {
+
+                case 0:
+                        res.push("Cero");
+                        break;
+                    case 1:
+                        res.push("Uno");
+                        break;
+                    case 2:
+                        res.push("Dos");
+                        break;
+                    case 3:
+                        res.push("Tres");
+                        break;
+                    case 4:
+                        res.push("Cuatro");
+                        break;
+                    case 5:
+                        res.push("Cinco");
+                        break;
+                    case 6:
+                        res.push("Seis");
+                        break;
+                    case 7:
+                        res.push("Siete");
+                        break;
+                    case 8:
+                        res.push("Ocho");
+                        break;
+                    case 9:
+                        res.push("Nueve");
+                        break;
+
+            }
+
+        }
+        console.log(res);
+
+
+    </script>
+</head>
+<body>
+    <p style="text-align:center; color: rgb(40, 3, 88);
+    text-indent: 50px;
+    text-transform: uppercase;"> Trabajo Practico N° 1  </hp>
+    <br>
+    <p style="text-align:center;">&nbsp; Realizar un algoritmo que me permita ingresar un array de números,</p>
+    <p style="text-align:center; ">&nbsp;sumarlos y devolver la suma en palabras, por ejemplo, si el resultado es 345,</p>
+    <p style="text-align:center;">&nbsp; la salida debería ser ["tres","cuatro","cinco"]</p>
+  
+
+   
+    
+</body>
+</html>

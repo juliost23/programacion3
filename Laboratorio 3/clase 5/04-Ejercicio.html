@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EJERCICIO</title>
+    </head>
+    <body>
+        <p><b>Calcular perimetro </b></p>  
+        
+        <p id= "mensaje"> OPERACION</p>
+        <input id="entrada1" />
+        <input id="entrada2" />
+        <button id="boton">Perimetro</button>
+        <button id="boton2">Superficie</button>
+        
+        <script>
+
+// etiqueta p base altura- 2 botones uno para el perimetro y otro para la superficie. un click para mostrar resultado           
+            
+            const mensaje = document.querySelector("#mensaje")
+            const entrada1 = document.querySelector("#entrada1");
+            const entrada2 = document.querySelector("#entrada2");
+            const boton = document.querySelector("#boton2");
+            const boton2 = document.querySelector("#boton2");
+            //const superficie = (parseInt(entrada1.value) * parseInt(entrada2.value)); //NO USAR de
+            
+
+            //function
+
+
+            boton2.onclick = () => (mensaje.textContent = ((entrada1.value) * (entrada2.value)))
+            
+
+        </script>
+
+    </body>
+</html>

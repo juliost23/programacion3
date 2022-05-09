@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formularios</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<script> 
+    function calcular()
+   
+   {
+   
+       var resultado;
+       var num1 = document.getElementById("numero1").value;
+       var num2 = document.getElementById("numero2").value;
+
+       var lista = document.getElementById("opciones");
+       var valorSeleccionado = lista.options[lista.selectedIndex].value;
+       
+
+       switch (valorSeleccionado) {
+
+        case "1":
+               resultado = parseInt(num1) + parseInt(num2);
+        break;
+        case "2":
+               resultado = parseInt(num1) - parseInt(num2);
+        break;
+        case "3":
+               resultado = parseInt(num1) * parseInt(num2);
+        break;
+        case "4":
+                resultado = parseInt(num1) / parseInt(num2);
+        break;
+        default:
+                alert("Seleccione alguna operacion"); 
+        break;
+
+       }
+      // alert("El resultado es " + resultado);  
+      document.getElementById('resul').innerHTML =resultado;
+     
+   }
+      
+</script>
+<body id="body">
+    <div class="box">
+        <form>
+            
+            <h3>Ingresa un Numero</h3>
+            <input class="inputClass" type="number"  name="numero1" id="numero1" placeholder="Ingrese Numero" required /> <br>
+                      
+            <h3>Ingresa un Numero</h3>
+            <input class="inputClass" type="number" name="numero2" id="numero2" placeholder="Ingrese Numero" required /> <br>
+                        
+            <h3>Seleccionar Operacion</h3>
+            <select name="opciones" class="inputClass" id="opciones">
+                <option value="N">Seleccionar</option>
+                <option value="1">Suma</option>
+                <option value="2">Resta</option>
+                <option value="3">Multiplicacion</option>
+                <option value="4">Division</option>
+            </select>
+            <br>
+            <br>
+            <button  class="inputClass" onclick="calcular()" id="boton" name="boton"  >Calcular!</button> <br>
+            <h3>Resultado</h3>
+           
+            
+            <p id="resul" style="color: rgb(13, 18, 13);"></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+
+    //Funciones
+    //Sumar una cadena de numeros y los retorna;
+    // pasar por parametro un valor y multiplicarlo por el resultado de la suma anterior. 
+
+<head>
+    <meta http-equiv=”Content-Language” content=”es”/>
+    <title>Función</title>
+</head>
+
+<body>
+    <script>
+        sumacadenanumeros = (cadenaNumero, parametro) => {
+
+            var acumulador = 0;
+            var resultado = 0;
+
+            cadenaNumero.forEach(element => {
+                acumulador += element
+                
+            });
+            console.log(acumulador)
+
+            resultado=acumulador*parametro
+            console.log(resultado)
+            
+            return resultado
+        };
+
+      sumacadenanumeros([7,3,6,13],4);
+
+    </script>
+</body>
+
+</html>

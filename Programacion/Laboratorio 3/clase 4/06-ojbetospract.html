@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objetos</title>
+    </head>
+    <body>
+    <script>
+
+//objetos triangulo: 3 lados
+/* Lado 1. lado 2. lado3
+- una funcion perimetro (get)
+- tipo (get)--- retorne el nombre...
+- rectangulo :
+alto, ancho, perimetro(get), superficie(get), es cuadrado(get).
+*/
+        const triangulo = {
+
+            lado1 : 3,
+            lado2: 3,
+            lado3: 4,
+
+            get medidas() { 
+                return (this.lado1+this.lado2+this.lado3)
+            }
+        }
+
+        console.log("el perimetro es = " + triangulo.medidas);
+
+        
+        
+
+
+
+    </script>
+    </body>
+</html>

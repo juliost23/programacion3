@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM3</title>
+    </head>
+    <body>
+
+        <p id="texto">UN TEXTO</p>
+        <label for="colorTexto">Color del texto</label>
+
+        <select id="colorTexto">
+            <option value="black">Negro</option>
+            <option value="red">Rojo</option>
+            <option value="green">verde</option>
+            <option value="blue">Azul</option>
+        </select>
+
+        <label for="colorFondo">Color del fondo</label>
+        <select id="colorTexto">
+            <option value="white">Blanco</option>
+            <option value="red">Rojo</option>
+            <option value="green">verde</option>
+            <option value="blue">Azul</option>
+        </select>
+    
+    </body>
+    
+    <script>
+        //cambiar color
+        //CAMBIAR COLOR DEL FONDO DE LAS ETIQUETAS Y TEXTO
+
+        const texto = document.querySelector("#texto");
+        const colorTexto = document.querySelector("#colorTexto")
+
+        texto.style.color = "red";
+        texto.style.backgroundColor = "green";
+
+        colorTexto.onchange =() => console.log(colorTexto.value);
+        colorTexto.onchange = () => 
+         
+        
+
+    </script>
+
+    
+</html>
