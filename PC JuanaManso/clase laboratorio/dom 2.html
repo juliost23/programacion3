@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <p id="mensaje" >Hola Mundo</p>
+    <input id="entrada">
+    <button id="boton" >Cambiar Mensaje</button>
+   
+
+
+    <script>
+        const mensaje= document.querySelector("#mensaje");
+        const entrada= document.querySelector("#entrada");
+        const boton= document.querySelector("#boton");
+
+        boton.onClick =() => (mensaje.textContent = entrada.value);
+
+        
+        function CambiarMensaje ()
+        {
+            mensaje.textContent ="Nuevo mensaje";
+        }
+        const boton2 =document.querySelector("#boton2");
+        boton2.onClick =() => (mensaje.textContent =" Otro mensaje");
+
+
+        const boton3 =document.querySelector("#boton3");
+        
+        boton3.addEventListener("click",
+        () => {
+            console.log("en addEvenlistener");
+            mensaje.textContent = "Tercer Mensaje";
+        }); 
+
+
+        const onClickBoton3 = () => console.log("en AaEventlistener2");
+        boton3.onClick =() => console.log("en onclick");
+        boton3.removeEventListener("click", onClickBoton3);
+
+
+
+
+
+
+
+
+           
+    </script>
+</body>
+</html></htl>

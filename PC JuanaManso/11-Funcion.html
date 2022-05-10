@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-language" content="es" >
+        <title>Funcion</title>
+    </head>
+
+    <body>
+        <script>
+           // function functionTest(texto){
+             //   alert(texto)
+            //}
+        vars=0;
+       
+        S=sumar([2,4,6,8,10]);
+
+
+        function sumar(parametro){
+        parametro.forEach(element => {
+            vars = vars + element
+            
+        });
+        console.log(vars);
+        return vars
+        }
+        
+        multiplicar(4);
+
+        function multiplicar(valor){
+            Res=valor*S;
+        }
+        console.log(Res);
+
+
+        
+        </script>
+    </body>
+</html>

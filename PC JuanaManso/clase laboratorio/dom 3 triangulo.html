@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <p id="mensaje" >Calcular Perimetro y Superficie de un rectangulo</p>
+
+    <input id="entrada1">
+    <input id="entrada2">
+    
+    
+    <button id="boton" onclick="calcularP" >Calcular Perimetro</button>
+    <button id="boton1" >Calcular Superficie</button>
+    <p id="resultado">Resultado</p>
+   
+
+
+    <script>
+        const resultado= document.querySelector("#resultado");
+        const ent1= document.querySelector('#entrada1')
+        const boton= document.querySelector("#boton");
+         
+        console.log(ent1);
+
+
+        function calcularP()
+        {
+            resultado.textContent = ent1.value;
+        }
+
+       // boton.onClick =() => (mensaje.textContent = entrada1.value);
+
+           
+    </script>
+</body>
+</html></htl>

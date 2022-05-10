@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Objeto</title>
+  </head>
+    <body>
+        <script>
+             
+          const triangulo= {
+              l1:4,
+              l2:4,
+              l3:4,
+
+         /* distancia: function()  {
+              return Math.sqrt(this.x ** 2 +this.y **2);
+
+          },
+          distancia2 () =>{
+            console.log(this);
+
+          } */ 
+        
+        get perimetro() {
+            return (triangulo.l1+triangulo.l2+triangulo.l3);
+        },
+
+        get tipo(){
+
+            if (triangulo.l1==triangulo.l2)
+               { 
+                   if (triangulo.l1==triangulo.l3) 
+                   {
+                       return "equilatero";
+                   }
+                   else
+                   {
+                    return "isoceles";  
+                   } 
+               }
+
+            
+
+        
+        },
+
+    }
+        console.log(triangulo.perimetro)
+
+       console.log(triangulo.tipo)
+          
+       </script>   
+ 
+</body>
+</html>
