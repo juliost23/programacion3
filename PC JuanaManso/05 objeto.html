@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-language" content="es" >
+        <title>Funcion</title>
+    </head>
+
+    <body>
+        <script>
+           class Cursor
+           
+           {
+              constructor  (arriba,abajo,izq,der) 
+              {
+                  this.arriba=arriba,
+                  this.abajo=abajo,
+                  this.izquierda=izquierda,
+                  this.derecha=derecha
+              }
+            
+          sumarizquierda(){
+
+            this.izquierda++;  
+        }
+
+
+          var cursorobj= new Cursor(0,0,0,0);
+          cursorobj.sumarizquierda();
+          console.log(cursorobj)
+
+
+            
+          </script>
+    </body>
+</html>
