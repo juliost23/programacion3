@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EJERCICIO</title>
+    </head>
+    <body>
+        <p><b>CONVERSOR DE TEMPERATURA </b></p>
+
+        <p id= "resultado"> Resultado</p>
+        <p id= "mensaje"> Centigrados:</p> <button id="boton">Convertir</button>
+        <input id="entrada1" />
+        <p id= "mensaje"> Fahrenheit:</p> <button id="boton2">Convertir</button>
+        <input id="entrada2" />
+        <p id= "mensaje"> Kelvin:</p> <button id="boton3">Convertir</button>
+        <input id="entrada3"/>
+              
+        <script>
+
+// etiqueta p base altura- 2 botones uno para el perimetro y otro para la superficie. un click para mostrar resultado           
+            
+            const resultado = document.querySelector("#resultado")
+            const entrada1 = document.querySelector("#entrada1");
+            const entrada2 = document.querySelector("#entrada2");
+            const boton = document.querySelector("#boton1");
+            const boton2 = document.querySelector("#boton2");
+            const boton3 = document.querySelector("#boton3");
+            //const superficie = (parseInt(entrada1.value) * parseInt(entrada2.value)); //NO USAR de
+            
+
+            //function
+
+
+            boton2.onclick = () => (resultado.textContent = ((entrada2.value) * 0.18+32))
+            
+
+        </script>
+
+    </body>
+</html>

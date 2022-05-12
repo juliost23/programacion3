@@ -1,0 +1,33 @@
+CSS
+
+REGLAS DE ESTILO: SE APLICAN A LOS ELEMENTOS QUE TENEMOS EN EL DOM
+
+CLASES: INSTANCIAR ESTILOS EN DIVERSOS OBJETOS.
+VARIOS ELEMENTOS IGUALES.
+
+IDS: IDENTIFICADOR UNICO PARA CADA ELEMENTO DEL DOM
+
+PARA DEFINIR LAS CLASES SE HACE CON PUNTO . ---- EJEMPLO .div-frontal
+
+si quiero instanciar un estilo -- ejemplo : #div.frontal
+
+clases: hacer uso de la etiqueta y sobreescribir el estilo.
+
+etiqueta body....
+
+<div style ="bg: black"> </div>
+
+.div-frontal{
+    with----- ancho
+    height--- alto
+    background-color ---- fondo de color
+    color ---- color del texto
+    font.size ----- tamaño : px, inch+
+    font-family ----- tipo de fuente
+    margin ---- margenes
+    padding ----- relleno interno
+    text-align ---- alineación del texto.
+    position ---- absolut(px en x(left),px en y(top)), relative.
+    float ---- right .. ejemplo flota al lado derecho.
+}
+
