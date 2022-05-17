@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>DOM</title>
+        <title>Tarea 7</title>
     </head>
     <body>
-        <p id= "mensaje"> Ingrese Tarea</p> <input id="entrada1" />
+
+        <input id="nombreTarea"/>
+        <button id="agregarTarea">agregarTarea</button> 
+        <button id="confirmar">Eliminar</button>
 
         <UL id="lista"></UL>
         
@@ -13,24 +16,44 @@
 //bonus al final mostrar la cantidad de tareas realizadas
         
 
-            /*const arreglo = [
-                {descripcion: "tarea 1", lista: true},
-                {descripcion: "tarea 2", lista: False},
-                {descripcion: "tarea 3", lista: true},
-            ] */
+            const arreglo = [
+                {id:1, descripcion: "tarea 1", lista: true},
+                {id:2, descripcion: "tarea 2", lista: False},
+                {id:3, descripcion: "tarea 3", lista: true},
+            ] 
 
             const lista = document.querySelector("#lista");
+            const nombreTarea= document.querySelector("#nombreTarea");
+            const agregarTarea = document.querySelector("#agregarTarea");
 
         
-            const item =document.createElement("li")
-            item.textContent = "item 1";
+            for (let i=0; i<arreglo.length; i++){
+                const item =document.createElement("li");
+                item.textContent = arreglo[i].descripcion;
+                item.style.textDecoration = arreglo [i].lista ? "line-through"
+                lista.appendChild(item);
+            } 
 
-            const item2 =document.createElement("li")
-            item2.textContent = "item 2";
+            agregarTarea.onclick = () => {
+                const item = document.createElement("li");
+                item.textContent = nombreTarea.value;
+                //lista.appendChild(item);
+                arreglo.push {
+                    id: ++maxId,
+                    descripcion: nombreTarea.value,
+                    lista: false,
+                }
 
-            lista.appendChild(item);
-            lista.appendChild(item2);
+            }
 
+            confirmar.onclick = () => {
+
+                if (confirm "¿Desea Eliminar Tarea?"){
+
+                    item.remove()
+                }
+
+            }
 
         </script>   
 

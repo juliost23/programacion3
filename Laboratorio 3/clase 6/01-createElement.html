@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,29 +6,27 @@
     </head>
     <body>
 
-        <UL id="lista"></UL>
+        <UL id="lista"></UL>   
         <script>
 // Realizar un arreglo donde las tareas me figuren tachadas si estan hechas(true), se puede usar map, foreach. 
 //Para tachar se puede usar textdecoration
+        
 
             const arreglo = [
-                //{descripcion: "tarea 1", lista: true},
-                //{descripcion: "tarea 2", lista: False},
-                //{descripcion: "tarea 3", lista: true},
-            ]
+                {id:1, descripcion: "tarea 1", lista: true},
+                {id:2, descripcion: "tarea 2", lista: False},
+                {id:3, descripcion: "tarea 3", lista: true},
+            ] 
 
             const lista = document.querySelector("#lista");
 
         
-            const item =document.createElement("li")
-            item.textContent = "item 1";
-
-            const item2 =document.createElement("li")
-            item2.textContent = "item 2";
-
-            lista.appendChild(item);
-            lista.appendChild(item2);
-
+            for (let i=0; i<arreglo.length; i++){
+                const item =document.createElement("li");
+                item.textContent = arreglo[i].descripcion;
+                item.style.textDecoration = arreglo [i].lista ? "line-through"
+                lista.appendChild(item);
+            } 
 
         </script>   
 
