@@ -1,0 +1,43 @@
+<!-- nombres de los integrantes -->
+<!-- 
+-Lobos Aurora Mariana
+-Carrizo Escudero Carlos Ezequiel
+-Carrizo Valdez Fernando
+-Silva julios Nicolas
+-Nieto Cerezo Jimena -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <script>
+
+     $(document).ready(function(){ 
+         for(i=1 ;i < 8;i++)
+
+         {
+            for(j=1 ;j < 8;j++)
+            {
+                if ((i==1) && (j==1))
+                  {
+                $("#divHTML").append(' <div class="casilla negra"><p class="blanca">T</p></div>');
+                  }
+            }
+
+         }
+     });
+
+  </script>
+  <body>
+    <div class="tablero" id="divHTML">
+     
+     
+    </div>
+  </body>
+</html>
